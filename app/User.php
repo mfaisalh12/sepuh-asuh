@@ -36,4 +36,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function donasi()
+    {
+        return $this->hasMany('App\donasi', 'user_id', 'id');
+    }
 }
