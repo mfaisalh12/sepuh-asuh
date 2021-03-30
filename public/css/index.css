@@ -1,0 +1,104 @@
+/* navbar  */
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+.nav-link:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993C8;
+}
+
+.col-sm .dropdown .btn {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    border-style: none;
+}
+
+.col-sm .dropdown .btn:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993C8;
+}
+
+.col-sm .dropdown .dropdown-menu {
+    background-color: #1993C8;
+}
+
+.col-sm .btn1 {
+    height: 39px;
+    width: 130px;
+    color: white;
+    background-color: #A5CB52;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.col-sm .btn1:hover {
+    border-bottom: 4px solid #1993C8;
+}
+
+.col-sm .btn2 {
+    color: #fff;
+    height: 39px;
+    width: 164px;
+    background-color: #107EAD;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+.col-sm .btn2:hover {
+    border-bottom: 4px solid #A5CB52;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+
+/* carousel slider */
+
+.carousel-item {
+    height: 577px;
+}
+
+.carousel-item .display-4 {
+    font-family: poppins, sans-serif;
+    font-size: 36px;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/* card */
+
+.heading {
+    text-align: center;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #1993C8;
+    text-align: center;
+}
