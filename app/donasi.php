@@ -13,6 +13,6 @@ class donasi extends Model
     
     public function program()
     {
-        return $this->hasMany('App\program','program_id','id');
+        return $this->hasMany('App\program','donasi_id','id');
     }
 }
