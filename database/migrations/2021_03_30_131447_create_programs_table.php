@@ -14,7 +14,12 @@ class CreateProgramsTable extends Migration
     public function up()
     {
         Schema::create('programs', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->integer('donasi_id');
+            $table->string('jenis_program');
+            $table->string('img_program');
+            $table->text('berita_program');
+            $table->integer('jumlah_donasi');
             $table->timestamps();
         });
     }

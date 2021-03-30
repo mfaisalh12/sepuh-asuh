@@ -14,7 +14,9 @@ class CreateBerandasTable extends Migration
     public function up()
     {
         Schema::create('berandas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('img');
+            $table->text('berita');
             $table->timestamps();
         });
     }
