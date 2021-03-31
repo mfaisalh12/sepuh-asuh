@@ -16,4 +16,5 @@ class BerandaController extends Controller
         $beranda = beranda::paginate(3);
         return view('index', compact('beranda'));
     }
+  
 }

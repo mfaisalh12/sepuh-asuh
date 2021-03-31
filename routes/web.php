@@ -19,3 +19,5 @@ Route::get('/program', 'ProgramController@index');
 Route::get('/tentang-kami',function() {
     return view('tentang');
 });
+Route::get('/donasi','DonasiController@donasi');
+Route::post('/donasi','DonasiController@submit');
