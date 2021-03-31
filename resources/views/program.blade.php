@@ -35,9 +35,9 @@
                                 <div class="dropdown">
                                     <button class="btn dropdown" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Modal Usaha</a></li>
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Biaya Hidup</a></li>
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Pendidikan</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Modal Usaha</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Biaya Hidup</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Pendidikan</a></li>
                                     </ul>
                                 </div>
                             </div>
