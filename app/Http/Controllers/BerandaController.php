@@ -1,20 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\beranda;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class BerandaController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -22,7 +13,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $beranda = Beranda::paginate(20);
-        return view('home', compact('berandas'));
+        $beranda = beranda::paginate(3);
+        return view('index', compact('beranda'));
     }
 }
