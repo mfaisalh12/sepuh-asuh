@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','BerandaController@home');
-Route::get('/login','BerandaController@signup');
-Route::get('/program','BerandaController@program');
-Route::get('/tentang','BerandaController@tentang');
+Route::get('/', function () {
+    return view('index');
+});
+
