@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'BerandaController@index');
-Route::get('/donasi', 'DonasiController@index');
+Route::get('/program', 'ProgramController@index');
