@@ -64,7 +64,6 @@
     <!-- card start -->
     <div class="jumbotron">
         <div class="row">
-        @foreach($programs as $program)
             <div class="col-lg">
                 <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;;">
                     <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
@@ -170,7 +169,6 @@
                 </div>
             </div>
         </div>
-        @endforeach
     </div>
 
     <!-- card end -->
