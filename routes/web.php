@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'BerandaController@index');
 Route::get('/program', 'ProgramController@index');
+Route::get('/tentang-kami',function() {
+    return view('tentang');
+});
