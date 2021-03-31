@@ -47,7 +47,8 @@
                             </div>
                             <div class="col-sm">
                                 <div class="a">
-                                    <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button>
+                                    <a href="{{url('/donasi')}}">
+                                    <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button></a>
                                 </div>
                             </div>
                             <div class="col-sm">
