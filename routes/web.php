@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/', 'BerandaController@index');
