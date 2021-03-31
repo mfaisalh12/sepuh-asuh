@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- css link -->
     <link rel="stylesheet" href="{{ asset('css/program.css')}}">
-    <title>Program</title>
+    <title>Asuh Sepuh</title>
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="/"><b>ASUH SEPUH</b></a>
+            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,14 +35,14 @@
                                 <div class="dropdown">
                                     <button class="btn dropdown" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Modal Usaha</a></li>
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Biaya Hidup</a></li>
-                                        <li><a class="dropdown-item" href="/progam">Bantuan Pendidikan</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Modal Usaha</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Biaya Hidup</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Pendidikan</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <a class="nav-link active" href="/" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
+                                <a class="nav-link active" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
                             </div>
                             <div class="col-sm">
                                 <div class="a">
@@ -64,11 +64,12 @@
     <!-- card start -->
     <div class="jumbotron">
         <div class="row">
+        @foreach($program as $program)
             <div class="col-lg">
                 <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
+                    <img src="{{ url('uploads') }}/{{ $program->img_program }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
+                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b>{{ $program->berita_program }}</b></h5>
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
@@ -76,98 +77,12 @@
                                 <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
+                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. {{ number_format($program->jumlah_donasi) }}</div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;">
-                    <img src="../img/gambar1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b> Bantu Ayah Difabel Agar Tidak Melaut Lagi</b></h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 65%; background-color: #1993C8; border-radius: 20px;;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="char-name" style="opacity: 60%; font-family: poppins,sans-serif; font-size: 12px;">Terkumpul</div>
-                            <div class="char-name" style="font-weight: bold; font-family: poppins, sans-serif; font-size: 14px;">Rp. 49,350,000</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        @endforeach
         </div>
     </div>
 

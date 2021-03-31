@@ -18,8 +18,8 @@ class CreateProgramsTable extends Migration
             $table->integer('donasi_id');
             $table->integer('beranda_id');
             $table->string('jenis_program');
+            $table->string('berita_program');
             $table->string('img_program');
-            $table->text('berita_program');
             $table->integer('jumlah_donasi');
             $table->timestamps();
         });

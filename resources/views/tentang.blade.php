@@ -14,9 +14,9 @@
 
 <body>
     <!--Bagian Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="/"><b>ASUH SEPUH</b></a>
+            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,14 +31,14 @@
                                 <div class="dropdown">
                                     <button class="btn dropdown" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="/program">Bantuan Modal Usaha</a></li>
-                                        <li><a class="dropdown-item" href="/program">Bantuan Biaya Hidup</a></li>
-                                        <li><a class="dropdown-item" href="/program">Bantuan Pendidikan</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Modal Usaha</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Biaya Hidup</a></li>
+                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Pendidikan</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <a class="nav-link active" href="/tentang" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
+                                <a class="nav-link active" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
                             </div>
                             <div class="col-sm">
                                 <div class="a">
