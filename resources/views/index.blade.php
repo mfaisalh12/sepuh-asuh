@@ -64,42 +64,20 @@
     <!-- start card -->
     <div class="jumbotron" style="margin-left: 110px;">
         <div class="row">
+        @foreach($beranda as $beranda)
             <div class="col-lg">
                 <div class="card shadow p-3 mb-5 bg-body rounded " style="width: 18rem;">
-                    <img src="../uploads/gambar2.jpg" class="card-img-top" alt="...">
+                    <img src="{{ url('uploads') }}/{{ $beranda->img }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: poppins, sans-serif;">Nenek Hidup Sebatang Kara</h5>
+                        <h5 class="card-title" style="font-family: poppins, sans-serif;">{{ $beranda->judul }}</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size:14px;"><i class="bi bi-geo-alt-fill" style="font-size: 12px; color: #1993C8;"></i> kecamatan apel prov. mengkudu</li>
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size: 12px; color: #939393;">hidup sebatang kara adalah hobi sang nenek, sehingga banyak yang mengasihaninya</li>
+                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size:14px;"><i class="bi bi-geo-alt-fill" style="font-size: 12px; color: #1993C8;"></i> {{ $beranda->alamat }}</li>
+                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size: 12px; color: #939393;">{{ $beranda->berita }}</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded " style="width: 18rem;">
-                    <img src="../uploads/gambar2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: poppins, sans-serif;">Nenek Hidup Sebatang Kara</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size:14px;"><i class="bi bi-geo-alt-fill" style="font-size: 12px; color: #1993C8;"></i> kecamatan apel prov. mengkudu</li>
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size: 12px; color: #939393;">hidup sebatang kara adalah hobi sang nenek, sehingga banyak yang mengasihaninya</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded " style="width: 18rem;">
-                    <img src="../uploads/gambar2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-family: poppins, sans-serif;">Nenek Hidup Sebatang Kara</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size:14px;"><i class="bi bi-geo-alt-fill" style="font-size: 12px; color: #1993C8;"></i> kecamatan apel prov. mengkudu</li>
-                        <li class="list-group-item" style="font-family: poppins, sans-serif; font-size: 12px; color: #939393;">hidup sebatang kara adalah hobi sang nenek, sehingga banyak yang mengasihaninya</li>
-                    </ul>
-                </div>
-            </div>
+        @endforeach
         </div>
     </div>
 
