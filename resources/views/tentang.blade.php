@@ -2,6 +2,7 @@
 
 @section('style')
     <link rel="stylesheet" href="{{{ asset('css/tentang.css')}}}">
+@endsection
 
 @section('content')
     <!--Bagian Menghubungkan orang baik-->
