@@ -79,3 +79,15 @@
     background-color: #fff;
     border: 2px solid #107ead;
 }
+
+/* footer */
+
+.footer {
+    position: relative;
+    color: #fff;
+}
+.footer p {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}

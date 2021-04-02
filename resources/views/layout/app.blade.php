@@ -71,9 +71,10 @@
         @yield('content')
     </main>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#1993C8" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,128C480,128,600,128,720,112C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+
     <footer class="footer">
-        <p>create by kelompok2</p>
+        <p>Create by kelompok2</p>
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#1993C8" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,128C480,128,600,128,720,112C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
