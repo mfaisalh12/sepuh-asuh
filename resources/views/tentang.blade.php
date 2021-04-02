@@ -116,32 +116,43 @@
                 <h3 class="text-center text-info" style="font-family: poppins, sans-serif; font-size: 40; color: #1993C8;"><b>Hubungi Kami</b></h3>
                 <h5 class="text-center mt-4" style="font-family: poppin, sans-serif; font-size: 24px; color: black;;">Apabila terdapat kekurangan <br> informasi/ pesan, silahkan isi <br> form di samping! Terima Kasih</h5>
             </div>
-            <div class="col ">
+            <div class="col">
                 <div class="card" style="border: 2px solid #1993C8; border-radius: 12px;">
                     <div class="card-body">
-                        <form class="formhubungi mt-2 ">
+                        @if (count($errors) > 0)
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        @if (Session::has('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>{{Session::get('success')}}</strong>
+                        </div>
+                        @endif
+                        <form class="formhubungi mt-2" method="post" action="{{ url('tentang-kami/send') }}">
+                        @csrf
                             <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Alamat Email</label>
-                                <input type="email " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter email ">
+                                <label>Alamat Email</label>
+                                <input type="text" name="name" class="form-control" value="" />
                             </div>
                             <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Nama</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Masukan Nama Anda disini! ">
+                                <label>Nama</label>
+                                <input type="text" name="email" class="form-control" value="" />
                             </div>
                             <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Subjek</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Silahkan Isi disini! ">
+                                <label>Pesan</label>
+                                <textarea name="message" class="form-control"></textarea>
                             </div>
-                            <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Pesan</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Ketikan Pesan Anda disini! ">
-                            </div>
-
-                            <button type="submit " class="btn btn-primary mt-2  ">Submit</button>
+                            <input type="submit" name="send" class="btn btn-primary" value="Send" />
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
