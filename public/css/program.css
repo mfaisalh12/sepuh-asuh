@@ -17,7 +17,7 @@
 
 .nav-link:hover {
     margin-top: 5px;
-    border-bottom: 4px solid #1993C8;
+    border-bottom: 3px solid #1993c8;
 }
 
 .col-sm .dropdown .btn {
@@ -25,26 +25,24 @@
     margin-bottom: 10px;
     transition: all 0.8s;
     height: 50px;
-    width: 100px;
     line-height: 50px;
-    text-align: center;
     border-style: none;
 }
 
 .col-sm .dropdown .btn:hover {
     margin-top: 5px;
-    border-bottom: 4px solid #1993C8;
+    border-bottom: 3px solid #1993c8;
 }
 
 .col-sm .dropdown .dropdown-menu {
-    background-color: #1993C8;
+    background-color: #1993c8;
 }
 
 .col-sm .btn1 {
     height: 39px;
     width: 130px;
     color: white;
-    background-color: #A5CB52;
+    background-color: #a5cb52;
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 10px;
@@ -52,28 +50,27 @@
 }
 
 .col-sm .btn1:hover {
-    border-bottom: 4px solid #1993C8;
+    border-bottom: 4px solid #1993c8;
 }
 
 .col-sm .btn2 {
     color: #fff;
     height: 39px;
     width: 164px;
-    background-color: #107EAD;
+    background-color: #107ead;
     border-radius: 10px;
     border-style: none;
     margin-left: 10px;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .col-sm .btn2:hover {
-    border-bottom: 4px solid #A5CB52;
+    border-bottom: 4px solid #a5cb52;
 }
 
 .navbar-brand {
     margin-left: 50px;
 }
-
 
 /* card*/
 
@@ -82,14 +79,12 @@
     margin-top: 90px;
 }
 
-
 /* footer */
 
 .footer {
-    background-color: #1993C8;
+    background-color: #1993c8;
     text-align: center;
 }
-
 
 /* char style*/
 
@@ -99,5 +94,5 @@
 }
 
 .char-per::before {
-    transform: translateX(50%)
+    transform: translateX(50%);
 }
