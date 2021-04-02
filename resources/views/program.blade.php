@@ -16,7 +16,7 @@
                     <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 348px;;">
                         <img src="{{ url('uploads') }}/{{ $item->img_program }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title text-start" style="font-family: poppins, sans-serif; font-size: 20px;"><b>{{ $item->berita_program }}</b></h5>
+                            <h5 class="card-title git add ." style="font-size: 18px;"><b>{{ $item->berita_program }}</b></h5>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
