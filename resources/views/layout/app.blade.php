@@ -6,23 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Link Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
     <!-- link css -->
     @yield('style')
-    <!-- link css end -->
-
+    
     <title>ASUH SEPUH</title>
 </head>
 
 <body>
     <!-- start navbar -->
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+   <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
+            <a class="navbar-brand" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,13 +51,11 @@
                                 <a class="nav-link" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
                             </div>
                             <div class="col-sm">
-                                <div class="a">
-                                    <a class="nav-link" href="{{url('/donasi')}}">
+                                    <a href="{{url('/donasi')}}">
                                     <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button></a>
-                                </div>
                             </div>
                             <div class="col-sm">
-                                <a class="nav-link" href="/login">
+                                <a href="/login">
                                     <button type="button" class="btn2" style="font-family:poppins, sans-serif; font-size:18px;">MASUK/DAFTAR</button></a>
                             </div>
                         </div>
