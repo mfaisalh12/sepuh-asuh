@@ -1,62 +1,9 @@
-<!doctype html>
-<html lang="en">
+@extends('layout.app')
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+@section('style')
     <link rel="stylesheet" href="{{{ asset('css/tentang.css')}}}">
-    <title>Tentang</title>
-</head>
 
-<body>
-    <!--Bagian Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-sm">
-                                <a class="nav-link active" aria-current="page" style="font-family:poppins, sans-serif;font-size:18px; color:#939393;" href="/"><u>BERANDA</u></a>
-                            </div>
-                            <div class="col-sm">
-                                <div class="dropdown">
-                                    <button class="btn dropdown" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Modal Usaha</a></li>
-                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Biaya Hidup</a></li>
-                                        <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Pendidikan</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <a class="nav-link active" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
-                            </div>
-                            <div class="col-sm">
-                                <div class="a">
-                                    <a href="{{url('/donasi')}}">
-                                        <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button></a>
-                                </div>
-                            </div>
-                            <div class="col-sm">
-                                <a href="/login">
-                                    <button type="button" class="btn2" style="font-family:poppins, sans-serif; font-size:18px;">MASUK/DAFTAR</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </nav>
+@section('content')
     <!--Bagian Menghubungkan orang baik-->
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
@@ -168,50 +115,45 @@
                 <h3 class="text-center text-info" style="font-family: poppins, sans-serif; font-size: 40; color: #1993C8;"><b>Hubungi Kami</b></h3>
                 <h5 class="text-center mt-4" style="font-family: poppin, sans-serif; font-size: 24px; color: black;;">Apabila terdapat kekurangan <br> informasi/ pesan, silahkan isi <br> form di samping! Terima Kasih</h5>
             </div>
-            <div class="col ">
+            <div class="col">
                 <div class="card" style="border: 2px solid #1993C8; border-radius: 12px;">
                     <div class="card-body">
-                        <form class="formhubungi mt-2 ">
+                        @if (count($errors) > 0)
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        @if (Session::has('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>{{Session::get('success')}}</strong>
+                        </div>
+                        @endif
+                        <form class="formhubungi mt-2" method="post" action="{{ url('tentang-kami/send') }}">
+                        @csrf
                             <div class="form-group ">
-                                <label for="exampleInputEmail1 ">Alamat Email</label>
-                                <input type="email " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Enter email ">
+                                <label>Alamat Email</label>
+                                <input type="text" name="name" class="form-control" value="" />
                             </div>
                             <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Nama</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Masukan Nama Anda disini! ">
+                                <label>Nama</label>
+                                <input type="text" name="email" class="form-control" value="" />
                             </div>
                             <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Subjek</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Silahkan Isi disini! ">
+                                <label>Pesan</label>
+                                <textarea name="message" class="form-control"></textarea>
                             </div>
-                            <div class="form-group mt-2 ">
-                                <label for="exampleInputPassword1 ">Pesan</label>
-                                <input type="password " style="border: 1px solid #1993C8;" class="form-control " id="exampleInputPassword1 " placeholder="Ketikan Pesan Anda disini! ">
-                            </div>
-
-                            <button type="submit " class="btn btn-primary mt-2  ">Submit</button>
+                            <input type="submit" name="send" class="btn btn-primary" value="Send" />
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!-- footer -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#1993C8" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,128C480,128,600,128,720,112C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <footer class="footer">
-        <p class=" text-center" style="background-color: #1993C8;">create by kelompok2</p>
-    </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
-    -->
-</body>
-
-</html>
+@endsection
