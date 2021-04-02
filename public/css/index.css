@@ -98,6 +98,32 @@
     font-weight: bold;
 }
 
+.container-berita {
+    padding: 4% 10%;
+    align-items: center;
+}
+
+.justify-content-center {
+    padding: 0 4%;
+}
+
+.blue-title {
+    color: #1993c8;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.card-img-top {
+    height: 220px;
+}
+
+.card-title {
+    padding: 3% 4% 0;
+}
+
+.card-text-body {
+    padding: 0 4% 4%;
+}
 /* card */
 
 .heading {

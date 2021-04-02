@@ -59,19 +59,19 @@
     <!-- carousel slide end -->
 
     <div class="heading-fluid mt-5">
-        <h1 class=" text-center" style="font-family: poppins, sans-serif; font-size: 35px;">BERITA TERBARU</h1>
+        <h1 class="text-center blue-title">BERITA TERBARU</h1>
     </div>
     <!-- start card -->
-    <div class="jumbotron" style="margin-left: 110px;">
+    <div class="container-berita">
         <div class="row">
         @foreach($beranda as $beranda)
-            <div class="col-lg">
-                <div class="card shadow p-3 mb-5 bg-body rounded " style="width: 18rem;">
+            <div class="col justify-content-center">
+                <div class="card shadow mb-5">
                     <img src="{{ url('uploads') }}/{{ $beranda->img }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title" style="font-family: poppins, sans-serif;">{{ $beranda->judul }}</h5>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush card-text-body">
                         <li class="list-group-item" style="font-family: poppins, sans-serif; font-size:14px;"><i class="bi bi-geo-alt-fill" style="font-size: 12px; color: #1993C8;"></i> {{ $beranda->alamat }}</li>
                         <li class="list-group-item" style="font-family: poppins, sans-serif; font-size: 12px; color: #939393;">{{ $beranda->berita }}</li>
                     </ul>
