@@ -24,18 +24,18 @@
         <div class="container-fluid">
             <a class="navbar-brand" style="font-family:poppins, sans-serif;font-size:30px; color:#107EAD" href="{{ url('/') }}"><b>ASUH SEPUH</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <div class="container">
-                        <div class="row ">
+                        <div class="row">
                             <div class="col-sm">
-                                <a class="nav-link active" aria-current="page" style="font-family:poppins, sans-serif;font-size:18px; color:#939393;" href="/"><u>BERANDA</u></a>
+                                <a class="nav-link" aria-current="page" style="font-family:poppins, sans-serif;font-size:18px; color:#939393;" href="/"><u>BERANDA</u></a>
                             </div>
                             <div class="col-sm">
                                 <div class="dropdown">
-                                    <button class="btn" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
+                                    <button class="btn dropdown" type="button" style="font-family:poppins, sans-serif; font-size: 18px; color: #939393;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><u>PROGRAM</u></button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Modal Usaha</a></li>
                                         <li><a class="dropdown-item" href="{{ url('/program') }}">Bantuan Biaya Hidup</a></li>
@@ -44,16 +44,16 @@
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <a class="nav-link active" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
+                                <a class="nav-link" href="{{ url('/tentang-kami') }}" style="font-family:poppins, sans-serif;font-size:18px;color:#939393;"><u>TENTANG</u></a>
                             </div>
                             <div class="col-sm">
                                 <div class="a">
-                                    <a href="{{url('/donasi')}}">
+                                    <a class="nav-link" href="{{url('/donasi')}}">
                                     <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button></a>
                                 </div>
                             </div>
                             <div class="col-sm">
-                                <a href="/login">
+                                <a class="nav-link" href="/login">
                                     <button type="button" class="btn2" style="font-family:poppins, sans-serif; font-size:18px;">MASUK/DAFTAR</button></a>
                             </div>
                         </div>

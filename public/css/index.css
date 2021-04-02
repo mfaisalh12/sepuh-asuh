@@ -17,7 +17,7 @@
 
 .nav-link:hover {
     margin-top: 5px;
-    border-bottom: 3px solid #1993c8;
+    border-bottom: 4px solid #1993c8;
 }
 
 .col-sm .dropdown .btn {
@@ -26,16 +26,20 @@
     transition: all 0.8s;
     height: 50px;
     line-height: 50px;
+    text-align: center;
     border-style: none;
 }
 
 .col-sm .dropdown .btn:hover {
     margin-top: 5px;
-    border-bottom: 3px solid #1993c8;
+    border-bottom: 4px solid #1993c8;
 }
 
 .col-sm .dropdown .dropdown-menu {
     background-color: #1993c8;
+}
+.dropdown-item {
+    color: #fff;
 }
 
 .col-sm .btn1 {

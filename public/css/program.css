@@ -38,6 +38,10 @@
     background-color: #1993c8;
 }
 
+.dropdown-item {
+    color: #fff;
+}
+
 .col-sm .btn1 {
     height: 39px;
     width: 130px;
