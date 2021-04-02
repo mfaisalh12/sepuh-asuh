@@ -2,8 +2,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
 /* navbar  */
-
+.container-tim {
+    padding: 5% 12%;
+}
 .navbar-brand {
     font-weight: 600;
     font-size: 30px;
@@ -87,16 +93,6 @@
 
 /*  */
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
 .jumbotron {
     padding: 10% 10% 35%;
     height: 639px;
@@ -111,10 +107,52 @@ body {
     background-size: 349px 329px;
 }
 
-.jumbotron .display-4 {
-    font-weight: bold;
+.title {
+    font-weight: 700;
+    font-size: 36px;
 }
 
+.white-text {
+    color: #ffff;
+}
+
+.blue-text {
+    color: #1993c8;
+}
+.tim-kami {
+    padding: 2%;
+}
+
+.tim-kami .card {
+    box-shadow: 2px 1px 20px #6e6e8a;
+}
+
+.box-text-contact {
+    margin-left: 8%;
+    width: min-content;
+}
+
+.contact-title {
+    padding: 16% 0 2%;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-form {
+    border: 2px solid #1993c8;
+    width: 70%;
+    border-radius: 12px;
+}
+
+.contact-form .card-body {
+    padding: 5% 8%;
+}
+
+.contact-text {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.12rem;
+}
 /* footer */
 
 .footer {
