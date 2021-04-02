@@ -5,8 +5,6 @@
 @endsection
 
 @section('content')
-
-
     <!-- card start -->
     <div class="card-container">
         <div>

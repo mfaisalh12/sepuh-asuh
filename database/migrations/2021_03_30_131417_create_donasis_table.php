@@ -15,11 +15,11 @@ class CreateDonasisTable extends Migration
     {
         Schema::create('donasis', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id');
+            $table->integer('user_id')->nullable();
             $table->integer('jumlah_donasi');
-            $table->date('tgl_donasi');
-            $table->string('bukti_donasi');
-            $table->string('status_donasi');
+            $table->date('tgl_donasi')->nullable();
+            $table->binary('bukti_donasi');
+            $table->string('status_donasi')->nullable();
             $table->timestamps();
         });
     }

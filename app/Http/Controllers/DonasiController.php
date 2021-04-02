@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\donasi;
 use Illuminate\Http\Request;
+use DB;
 
 class DonasiController extends Controller
 {
@@ -21,7 +22,7 @@ class DonasiController extends Controller
         ]);
         DB::table('donasis')->insert([
             'jumlah_donasi'=> $request->jumlah_donasi,
-            'bukti_donasi'=> $request->bukti_pembayaran
+            'bukti_donasi'=> $request->bukti_donasi
         ]);
         
         return redirect('/');
