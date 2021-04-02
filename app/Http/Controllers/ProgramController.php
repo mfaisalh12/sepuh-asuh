@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 use App\program;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class ProgramController extends Controller
 {
@@ -12,8 +14,8 @@ class ProgramController extends Controller
      */
     public function index()
     {
-        $program = program::paginate(6);
-        return view('program', compact('program'));
+        $program = DB::table('programs')->paginate(6);
+        return view('program', ['program'=>$program]);
     }
 }
 ?>
