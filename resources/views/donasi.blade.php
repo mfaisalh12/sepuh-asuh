@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
       </div>
     @endif
     
-    <form action="/" class="row g-3" method="post">
+    <form action="/donasi" class="row g-3" method="POST">
         @csrf
         <div class="col-12">
           <label for="inputNama" class="form-label">Nama</label>
@@ -36,11 +36,7 @@
           <input type="text" class="form-control" id="inputDonasi" name="jumlah_donasi">
           <?$jumlah_donasi = $_POST["jumlah_donasi"];?>
         </div>
-        <div class="mb-3">
-            <label for="formFile" class="form-label">Bukti Pembayaran</label>
-            <input class="form-control" type="file" id="formFile" name="bukti_pembayaran">
-            <?$bukti_donasi = $_POST["bukti_pembayaran"];?>
-          </div>
+        
           <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
             <option selected>Pilih Program yang akan di donasi</option>
             <option value="1">Modal Usaha</option>
@@ -54,6 +50,13 @@
               <option value="2">Orang 2</option>
               <option value="3">Orang 3</option>
           </select>
+          <div class="mb-3"><div class="mb-3">
+            <label for="formFile" class="form-label">Bukti Pembayaran</label>
+            <b><br>No. Rekening : 32144123XXXXXXXX (BANK A)<br>No. Rekening : 32413412XXXXXXXX (BANK B)</b>
+            <input class="form-control" type="file" id="formFile" name="bukti_donasi">
+            <?$bukti_donasi = $_POST["bukti_donasi"];?>
+          </div>
+         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
