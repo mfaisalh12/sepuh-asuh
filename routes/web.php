@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'BerandaController@index');
 Route::get('/program', 'ProgramController@index');
-Route::get('/tentang-kami',function() {
-    return view('tentang');
-});
 Route::get('/donasi','DonasiController@donasi');
 Route::post('/donasi','DonasiController@submit');
+Route::get('/tentang-kami', 'SendEmailController@index');
+Route::post('/tentang-kami/send', 'SendEmailController@send');
