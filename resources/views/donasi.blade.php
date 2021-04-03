@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <title>Donasi</title>
-</head>
-<body>
+@extends('layout.app')
+
+@section('style')
+    <link rel="stylesheet" href="{{ asset('css/index.css')}}">
+@endsection
+
+@section('content')
     <h1>DONASI</h1>
     <a href="/">
       <button class="btn btn-primary" type="submit">Back</button></a>
@@ -61,5 +57,5 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
-</body>
-</html>
+    <!-- end card -->
+@endsection
