@@ -1,0 +1,65 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar  */
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 30px;
+    color: #107ead;
+}
+
+.nav-link {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+.nav-link:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993c8;
+}
+
+.col-sm .dropdown .btn {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-style: none;
+}
+
+.col-sm .dropdown .btn:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993c8;
+}
+
+.col-sm .dropdown .dropdown-menu {
+    background-color: #1993c8;
+}
+.dropdown-item {
+    color: #fff;
+}
+
+/* container */
+.container-donasi {
+    padding: 8%;
+}
+/* footer */
+
+.footer {
+    position: relative;
+    color: #fff;
+}
+.footer p {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
