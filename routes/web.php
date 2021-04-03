@@ -20,3 +20,7 @@ Route::get('/donasi','DonasiController@donasi');
 Route::post('/donasi','DonasiController@submit');
 Route::get('/tentang-kami', 'SendEmailController@index');
 Route::post('/tentang-kami/send', 'SendEmailController@send');
+Route::get('/login', 'LoginController@index');
+Route::get('/login/cek', 'NewAccountController@cek');
+Route::get('/newaccount', 'NewAccountController@index');
+Route::post('/newaccount','NewAccountController@store');
