@@ -41,4 +41,6 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\donasi', 'user_id', 'id');
     }
+
+    //public $timestamps = false;
 }

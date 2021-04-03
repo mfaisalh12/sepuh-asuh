@@ -56,8 +56,13 @@
                 </div>
                 <div class="d-grid gap-2">
                     <button class="btn " style="color: #fff; background-color: #1993C8; border-radius: 8px; font-family: poppins,sans-serif; font-size: 12px; " type="button"><b>Masuk</b></button>
-                    <button class="btn" style="background-color: #fff; color: black; font-family: poppins,sans-serif; font-size: 12px;" type="button"><b>Buat AKun</b></button>
+                    
+                    <div class="d-grid gap-2">
+                        <a href="{{url('/newaccount')}}">
+                        <button class="btn" style="color: #fff; background-color: #1993C8; border-radius: 8px; font-family: poppins,sans-serif; font-size: 12px;" type="button"><b>Buat Akun</b></button>
+                    </div>
                 </div>
+                
                 <div class="g-signin2 mt-2" data-onsuccess="onSignIn " data-theme="dark" style="margin-left: 120px;"></div>
                 <script>
                     function onSignIn(googleUser) {

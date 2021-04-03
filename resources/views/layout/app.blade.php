@@ -55,7 +55,7 @@
                                     <button type="button" class="btn1" style="solid black; font-family:poppins, sans-serif;font-size:18px;">DONASI</button></a>
                             </div>
                             <div class="col-sm">
-                                <a href="/login">
+                                <a href="{{url('/login')}}">
                                     <button type="button" class="btn2" style="font-family:poppins, sans-serif; font-size:18px;">MASUK/DAFTAR</button></a>
                             </div>
                         </div>
