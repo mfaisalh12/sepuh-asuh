@@ -1,0 +1,102 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar  */
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 30px;
+    color: #107ead;
+}
+
+.nav-link {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+.nav-link:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993c8;
+}
+
+.col-sm .dropdown .btn {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-style: none;
+}
+
+.col-sm .dropdown .btn:hover {
+    margin-top: 5px;
+    border-bottom: 4px solid #1993c8;
+}
+
+.col-sm .dropdown .dropdown-menu {
+    background-color: #1993c8;
+}
+.dropdown-item {
+    color: #fff;
+}
+
+.btn1 {
+    height: 39px;
+    width: 130px;
+    color: white;
+    background-color: #a5cb52;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+.btn1:hover {
+    color: #a5cb52;
+    background-color: #fff;
+    border: 2px solid #a5cb52;
+}
+
+.btn2 {
+    color: #fff;
+    height: 39px;
+    width: 164px;
+    background-color: #107ead;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn2:hover {
+    color: #107ead;
+    background-color: #fff;
+    border: 2px solid #107ead;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+/* container */
+.container-donasi {
+    padding: 2% 12%;
+}
+/* footer */
+
+.footer {
+    position: relative;
+    color: #fff;
+}
+.footer p {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
