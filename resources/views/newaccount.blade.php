@@ -20,49 +20,58 @@
             </div>
     </nav>
     <h1>Halama Pembuatan Akun baru</h1>
-          @if ($errors->any())
-      <div class="alert alert-danger">
-          <ul>
-              @foreach ($errors->all() as $error)
-                  <li>{{ $error }}</li>
-              @endforeach
-          </ul>
-      </div>
-    @endif
-    
+        
     <form action="/newaccount" class="row g-3" method="POST">
+    </div>
         @csrf
         <div class="col-12">
         
           <label for="inputNama" class="form-label">Nama</label>
-          <input type="text" class="form-control" style="color: #fff; background-color: #1993C8; border-radius: 8px; font-family: poppins,sans-serif; font-size: 12px;" id="inputName" name="nama">
+          <input type="text" class="form-control" style="color: #fff; background-color: #1993C8; border-radius: 8px; font-size: 12px;" id="inputName" name="nama" value="{{old('nama')}}">
 
+          @error('nama')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
+
         <div class="col-12">
           <label for="inputDonasi" class="form-label">email</label>
-          <input type="text" class="form-control" id="inputemail" name="email">
+          <input type="text" class="form-control" id="inputemail" name="email" value="{{old('email')}}">
           <?$email = $_POST["email"];?>
+
+          @error('email')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
 
-        </div>
         <div class="col-12">
           <label for="inputDonasi" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputpassword" name="password">
+          <input type="password" class="form-control" id="inputpassword" name="password" value="{{old('password')}}">
           <input type="checkbox" onclick="myFunction()">Show Password
-          <?$telpon = $_POST["password"];?>
+          <?$password = $_POST["password"];?>
+          @error('password')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
         
-        </div>
+        
+
         <div class="col-12">
           <label for="inputDonasi" class="form-label">Telepon/No Hp</label>
-          <input type="text" class="form-control" id="inputtelpon" name="telpon">
+          <input type="text" class="form-control" id="inputtelpon" name="telpon" value="{{old('telpon')}}">
           <?$telpon = $_POST["telpon"];?>
+          @error('telpon')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
         </div>
-
+        
+        
+       
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
+      </div>
 
 
 <script>
