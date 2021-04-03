@@ -21,28 +21,28 @@
 
                 <div class="carousel-caption d-none d-md-block carousel-fluid">
                     <h1 class="content-left">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-carousel btn-left">Donasi Sekarang</button>
+                    <a href="{{url('/donasi')}}"><button type="button" class="btn-carousel btn-left">Donasi Sekarang</button></a>
                 </div>
             </div>
             <div class="carousel-item content-right">
                 <img src="../uploads/gambar2.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="content-right">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-carousel  btn-right">Donasi Sekarang</button>
+                    <a href="{{url('/donasi')}}"><button type="button" class="btn-carousel  btn-right">Donasi Sekarang</button></a>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../uploads/gambar3.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="content-left">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-carousel btn-left">Donasi Sekarang</button>
+                    <a href="{{url('/donasi')}}"><button type="button" class="btn-carousel btn-left">Donasi Sekarang</button></a>
                 </div>
             </div>
             <div class="carousel-item content-center">
                 <img src="../uploads/gambar4.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-carousel btn-center">Donasi Sekarang</button>
+                    <a href="{{url('/donasi')}}"><button type="button" class="btn-carousel btn-center">Donasi Sekarang</button></a>
                 </div>
             </div>
         </div>
