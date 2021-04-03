@@ -91,13 +91,37 @@
     height: 577px;
 }
 
-.carousel-item .display-4 {
-    font-family: poppins, sans-serif;
-    font-size: 36px;
-    text-align: right;
-    font-weight: bold;
+.btn-carousel {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #a5cb52;
+    border-color: #a5cb52;
+    color: #fff;
 }
 
+.btn-left {
+    margin: 2% 80% 12% 0;
+}
+
+.btn-right {
+    margin: 2% 0 12% 80%;
+}
+
+.btn-center {
+    margin: 2% 0 12% 0;
+}
+
+.content-left {
+    text-align: left;
+}
+
+.content-right {
+    text-align: right;
+}
+
+/* Berita */
 .container-berita {
     padding: 4% 10%;
     align-items: center;
