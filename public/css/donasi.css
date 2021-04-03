@@ -48,9 +48,46 @@
     color: #fff;
 }
 
+.btn1 {
+    height: 39px;
+    width: 130px;
+    color: white;
+    background-color: #a5cb52;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+.btn1:hover {
+    color: #a5cb52;
+    background-color: #fff;
+    border: 2px solid #a5cb52;
+}
+
+.btn2 {
+    color: #fff;
+    height: 39px;
+    width: 164px;
+    background-color: #107ead;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.btn2:hover {
+    color: #107ead;
+    background-color: #fff;
+    border: 2px solid #107ead;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
 /* container */
 .container-donasi {
-    padding: 8%;
+    padding: 2% 12%;
 }
 /* footer */
 
