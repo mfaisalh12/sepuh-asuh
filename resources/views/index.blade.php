@@ -20,29 +20,29 @@
                 <img src="../uploads/gambar1.jpg" class="img-fluid d-block w-100" alt="...">
 
                 <div class="carousel-caption d-none d-md-block carousel-fluid">
-                    <h1 class="display-4">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-success btn-fluid" style="font-family:poppins, sans-serif; font-size: 30px; border-radius: 10px; background-color: #A5CB52; border-color: #A5CB52; margin-left: 670px; margin-bottom: 100px;">Donasi Sekarang</button>
+                    <h1 class="content-left">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
+                    <button type="button" class="btn-carousel btn-left">Donasi Sekarang</button>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item content-right">
                 <img src="../uploads/gambar2.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-success btn-fluid" style="font-family:poppins, sans-serif; font-size: 30px; border-radius: 10px; background-color: #A5CB52; border-color: #A5CB52; margin-left: 670px; margin-bottom: 100px;">Donasi Sekarang</button>
+                    <h1 class="content-right">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
+                    <button type="button" class="btn-carousel  btn-right">Donasi Sekarang</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../uploads/gambar3.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-success btn-fluid" style="font-family:poppins, sans-serif; font-size: 30px; border-radius: 10px; background-color: #A5CB52; border-color: #A5CB52; margin-left: 670px; margin-bottom: 100px;">Donasi Sekarang</button>
+                    <h1 class="content-left">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
+                    <button type="button" class="btn-carousel btn-left">Donasi Sekarang</button>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item content-center">
                 <img src="../uploads/gambar4.jpg" class="img-fluid d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4">Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
-                    <button type="button" class="btn-success btn-fluid" style="font-family:poppins, sans-serif; font-size: 30px; border-radius: 10px; background-color: #A5CB52; border-color: #A5CB52; margin-left: 670px; margin-bottom: 100px;">Donasi Sekarang</button>
+                    <h1>Bergabung Bersama Kami <br> Untuk Mewujudkan <br>Kebahagian Mereka</h1>
+                    <button type="button" class="btn-carousel btn-center">Donasi Sekarang</button>
                 </div>
             </div>
         </div>
