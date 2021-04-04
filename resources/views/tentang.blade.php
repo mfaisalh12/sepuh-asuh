@@ -133,17 +133,17 @@
                         @csrf
                             <div class="form-group">
                                 <label>Alamat Email</label>
-                                <input type="text" name="name" class="form-control" value="" />
+                                <input type="text" name="name" class="form-control" value="" required/>
                             </div>
                             <div class="form-group mt-4">
                                 <label>Nama</label>
-                                <input type="text" name="email" class="form-control" value="" />
+                                <input type="text" name="email" class="form-control" value="" required/>
                             </div>
                             <div class="form-group mt-4">
                                 <label>Pesan</label>
-                                <textarea name="message" class="form-control"></textarea>
+                                <textarea name="message" class="form-control" required></textarea>
                             </div>
-                            <input type="submit" name="send" class="btn btn-primary mt-4" value="Send" />
+                            <input type="submit" name="send" class="btn btn-primary mt-4" value="Send"/>
                         </form>
                     </div>
                 </div>
